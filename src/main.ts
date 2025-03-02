@@ -43,7 +43,7 @@ const run = async(): Promise<void> => {
 
         core.debug(`Uploading file ${fileName} (${data.length} bytes)`)
         const upload = await octokit.rest.repos.uploadReleaseAsset({
-          data: data as unknown as string,
+          data: data as unknown as string, // eslint-disable-line @typescript-eslint/no-unsafe-type-assertion
           name: fileName,
           owner: github.context.repo.owner,
           release_id: release.data.id, // eslint-disable-line camelcase
