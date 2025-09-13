@@ -1,6 +1,6 @@
 # Release Upload
 
-Simple Github action to create a draft release with assets on tags push.
+A GitHub Action for uploading release assets to GitHub Releases. Automates the process of attaching files to releases in CI/CD workflows, supporting flexible configuration and robust error handling.
 
 ## Example workflow
 
