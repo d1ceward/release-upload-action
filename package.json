@@ -4,7 +4,7 @@
   "private": true,
   "description": "Simple Github action to create a draft release with assets on tags push",
   "engines": {
-    "node": "22.14.0"
+    "node": "22.19.0"
   },
   "main": "lib/main.js",
   "scripts": {
@@ -27,17 +27,17 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "1.11.1",
-    "@actions/github": "6.0.0"
+    "@actions/github": "6.0.1"
   },
   "devDependencies": {
-    "@eslint/js": "9.21.0",
-    "@types/node": "22.13.8",
+    "@eslint/js": "9.35.0",
+    "@types/node": "24.3.3",
     "@vercel/ncc": "0.38.3",
-    "eslint": "9.21.0",
-    "globals": "16.0.0",
+    "eslint": "9.35.0",
+    "globals": "16.4.0",
     "js-yaml": "4.1.0",
-    "typescript": "5.8.2",
-    "typescript-eslint": "8.25.0"
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.43.0"
   },
-  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
+  "packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706"
 }

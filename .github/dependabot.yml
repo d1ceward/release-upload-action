@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    target-branch: "develop"
+    assignees:
+      - d1ceward
+    labels:
+      - "type: dependencies"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    target-branch: "develop"
+    assignees:
+      - d1ceward
+    labels:
+      - "type: dependencies"
