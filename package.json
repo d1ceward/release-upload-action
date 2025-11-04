@@ -1,6 +1,6 @@
 {
   "name": "release-upload-action",
-  "version": "4.1.0",
+  "version": "4.3.0",
   "private": true,
   "description": "Simple Github action to create a draft release with assets on tags push",
   "engines": {
