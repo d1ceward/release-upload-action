@@ -1,16 +1,17 @@
 {
   "name": "release-upload-action",
-  "version": "4.3.1",
+  "version": "5.0.0",
   "private": true,
   "description": "Simple Github action to create a draft release with assets on tags push",
+  "author": "d1ceward",
+  "license": "MIT",
   "engines": {
-    "node": "24.11.1"
+    "node": "24.16.0"
   },
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint src/",
-    "package": "ncc build --source-map --license licenses.txt"
+    "lint": "eslint src/"
   },
   "repository": {
     "type": "git",
@@ -23,21 +24,16 @@
     "assets",
     "draft"
   ],
-  "author": "d1ceward",
-  "license": "MIT",
   "dependencies": {
-    "@actions/core": "3.0.0",
-    "@actions/github": "7.0.0"
+    "@actions/core": "3.0.1",
+    "@actions/github": "9.1.1"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.2",
-    "@types/node": "25.2.0",
-    "@vercel/ncc": "0.38.4",
-    "eslint": "9.39.2",
-    "globals": "17.3.0",
-    "js-yaml": "4.1.1",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.54.0"
+    "@eslint/js": "10.0.1",
+    "@types/node": "25.9.1",
+    "eslint": "10.4.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.60.0"
   },
-  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
+  "packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1"
 }

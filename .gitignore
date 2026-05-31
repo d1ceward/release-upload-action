@@ -4,6 +4,3 @@ node_modules/
 # Logs
 yarn-debug.log*
 yarn-error.log*
-
-# Ignore built ts files
-lib/
