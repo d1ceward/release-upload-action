@@ -6,7 +6,7 @@
   "author": "d1ceward",
   "license": "MIT",
   "engines": {
-    "node": "24.16.0"
+    "node": "24.18.1"
   },
   "main": "lib/main.js",
   "scripts": {
@@ -35,5 +35,5 @@
     "typescript": "6.0.3",
     "typescript-eslint": "8.65.0"
   },
-  "packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1"
+  "packageManager": "pnpm@11.19.0+sha512.7881f3ed590d472c4a955e2b88b2121791116066dcc88cbca3849ec9b60f1bbaa6d2ccb221fa91da4e1c65bef2bcbe379365aea7ac539c7bf86dedc3a1b22dce"
 }
