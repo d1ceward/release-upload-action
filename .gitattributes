@@ -1,6 +1,6 @@
 # See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
-# Mark the yarn lockfile as having been generated.
-yarn.lock linguist-generated
+# Mark the PNPM lockfile as having been generated.
+pnpm-lock.yaml linguist-generated
 
 dist/** -diff linguist-generated=true
