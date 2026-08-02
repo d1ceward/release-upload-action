@@ -1,12 +1,12 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import { basename } from 'path'
 import { readFile } from 'fs/promises'
+import { basename } from 'path'
 
 // Local imports
 import getReleaseTag from './release'
 
-const run = async(): Promise<void> => {
+const run = async (): Promise<void> => {
   try {
     const files = core.getMultilineInput('files', { required: true })
 
@@ -30,8 +30,8 @@ const run = async(): Promise<void> => {
       draft: true,
       owner: github.context.repo.owner,
       repo: github.context.repo.repo,
-      tag_name: releaseTag, // eslint-disable-line camelcase
-      target_commitish: github.context.sha // eslint-disable-line camelcase
+      tag_name: releaseTag,
+      target_commitish: github.context.sha
     })
 
     await Promise.all(
@@ -43,10 +43,10 @@ const run = async(): Promise<void> => {
 
         core.debug(`Uploading file ${fileName} (${data.length} bytes)`)
         const upload = await octokit.rest.repos.uploadReleaseAsset({
-          data: data as unknown as string, // eslint-disable-line @typescript-eslint/no-unsafe-type-assertion
+          data: data as unknown as string,
           name: fileName,
           owner: github.context.repo.owner,
-          release_id: release.data.id, // eslint-disable-line camelcase
+          release_id: release.data.id,
           repo: github.context.repo.repo
         })
 
@@ -54,11 +54,9 @@ const run = async(): Promise<void> => {
       })
     )
   } catch (error: unknown) {
-    if (error instanceof Error)
-      core.setFailed(error.message)
-    else
-      core.setFailed('Unknown error')
+    if (error instanceof Error) core.setFailed(error.message)
+    else core.setFailed('Unknown error')
   }
 }
 
-run() // eslint-disable-line @typescript-eslint/no-floating-promises
+run()
