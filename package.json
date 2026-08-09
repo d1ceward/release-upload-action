@@ -11,7 +11,9 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "js-lint": "biome check"
+    "js-lint": "biome check",
+    "test": "node --experimental-test-module-mocks --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"test/**/*.test.ts\"",
+    "type-check": "tsc -p tsconfig.test.json"
   },
   "repository": {
     "type": "git",
