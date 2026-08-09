@@ -1,7 +1,7 @@
+import { readFile } from 'node:fs/promises'
+import { basename } from 'node:path'
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import { readFile } from 'fs/promises'
-import { basename } from 'path'
 
 // Local imports
 import getReleaseTag from './release'
